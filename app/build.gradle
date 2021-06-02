@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+def acraVersion = '5.1.3'
+
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.mx.vise.cubicaciones"
+        minSdkVersion 16
+        targetSdkVersion 28
+
+        versionCode 2
+        versionName "1.0.1b"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+repositories {
+    maven { url "http://nexus.vise.com.mx/repository/maven-releases" }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:support-vector-drawable:28.0.0'
+    api 'com.android.support:design:28.0.0'
+    api 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    api 'com.fasterxml.jackson.core:jackson-databind:2.4.2'
+    api 'com.google.guava:guava:26.0-android'
+    api 'com.github.skydoves:colorpickerview:2.0.0'
+    api 'com.github.SandroMachado:openalpr-android:1.1.2'
+    api 'com.google.code.gson:gson:2.8.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'io.reactivex:rxjava:1.0.14'
+    api files('libs/commons-io-2.2.jar')
+    api files('libs/commons-lang3-3.4.jar')
+    api files('libs/commons-net-3.1.jar')
+    api files('libs/commons-validator-1.4.0.jar')
+    api files('libs/core-1.53.0.0.jar')
+    api files('libs/httpcore-4.3.1.jar')
+    api files('libs/httpmime-4.3.2.jar')
+    api files('libs/opencsv-2.2.jar')
+    api files('libs/pkix-1.53.0.0.jar')
+    api files('libs/prov-1.53.0.0.jar')
+    api files('libs/snmp6_1z.jar')
+    api files('libs/ZSDK_ANDROID_API.jar')
+    api 'com.github.gcacace:signature-pad:1.2.1'
+    api 'net.zetetic:android-database-sqlcipher:3.5.9@aar'
+    implementation "ch.acra:acra-mail:$acraVersion"
+    implementation "ch.acra:acra-dialog:$acraVersion"
+    implementation "ch.acra:acra-notification:$acraVersion"
+    implementation "ch.acra:acra-toast:$acraVersion"
+
+
+    api 'com.mx.vise:loginandroid:0.0.48'
+    api 'com.mx.vise:androidcamerahelper:0.0.5'
+    //api 'com.mx.vise:androiduhfhelper:0.0.27-test'
+    compile project(":uhfhelper")
+    api 'com.mx.vise:updaterandroid:0.0.3'
+
+
+
+}

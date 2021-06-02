@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_types" >
+        <item>@string/select_a_unit_type</item>
+        <item>@string/torton</item>
+        <item>@string/pipe</item>
+        <item>GONDOLA</item>
+        <item>@string/concrete</item>
+    </string-array>
+    <string name="select_a_unit_type">Selecciona un tipo de unidad</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="projects">
+        <item>55</item><!-- Proyecto de cubicaciones ID en eflow/Seguridad Proyectos-->
+    </integer-array>
+    <integer-array name="modules">
+        <item>263</item><!-- Modulo de cubicacion 1 -->
+        <item>266</item><!-- Modulo de cubicacion 2 -->
+    </integer-array>
+</resources>

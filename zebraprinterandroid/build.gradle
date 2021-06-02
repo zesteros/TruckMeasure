@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+
+repositories {
+    maven {
+        url "http://nexus.vise.com.mx/repository/maven-releases"
+    }
+}
+
+allprojects {
+    ext.RepoConfigurator = {
+        maven {
+            url = uri('http://nexus.vise.com.mx/repository/maven-releases')
+        }
+    }
+    buildscript.repositories RepoConfigurator
+    repositories RepoConfigurator
+}
+
+repositories { maven { url "http://nexus.vise.com.mx/repository/maven-releases" } }
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://nexus.vise.com.mx/repository/maven-releases") {
+                authentication(userName: mavenUser, password: mavenPassword)
+            }
+            pom.artifactId = 'androidzebrahelper'
+            pom.version = '0.0.7'
+            pom.name = 'Zebra API Android'
+            pom.packaging = 'aar'
+            pom.groupId = 'com.mx.vise'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api files('libs/commons-io-2.2.jar')
+    api files('libs/commons-lang3-3.4.jar')
+    api files('libs/commons-net-3.1.jar')
+    api files('libs/commons-validator-1.4.0.jar')
+    api files('libs/core-1.53.0.0.jar')
+    api files('libs/httpcore-4.3.1.jar')
+    api files('libs/httpmime-4.3.2.jar')
+    api files('libs/opencsv-2.2.jar')
+    api files('libs/pkix-1.53.0.0.jar')
+    api files('libs/prov-1.53.0.0.jar')
+    api files('libs/snmp6_1z.jar')
+    api files('libs/ZSDK_ANDROID_API.jar')
+}

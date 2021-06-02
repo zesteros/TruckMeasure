@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="disabled">#C0C0C0</color>
+    <color name="green">#0b8043</color>
+    <color name="white">#ffff</color>
+    <color name="button_disabled_tint">#aaa</color>
+    <array name="colors">
+    <item >#007FFF</item>
+    <item >#f6bf26</item>
+    <item >#0b8043</item>
+    <item >#0000FF</item>
+    <item >#33b5e5</item>
+    <item >#3f51b5</item>
+    <item >#FF007F</item>
+    <item >#00FFFF</item>
+    <item >#e67c73</item>
+    <item >#8e24aa</item>
+    <item >#616161</item>
+    <item >#00FF00</item>
+    <item >#7986cb</item>
+    <item >#FF00FF</item>
+    <item >#FF7F00</item>
+    <item >#ff8800</item>
+    <item >#039be5</item>
+    <item >#FF0000</item>
+    <item >#ff4444</item>
+    <item >#33b679</item>
+    <item >#f4511e</item>
+    <item >#d50000</item>
+    <item >#7F00FF</item>
+    <item >#FFFF00</item>
+    <item >#FFFFF</item>
+</array>
+</resources>

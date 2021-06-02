@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">zebraprinterandroid</string>
+    <string name="printing">Imprimiendo...</string>
+    <string name="printer_mac">printer_mac</string>
+    <string name="printer_name">printer_name</string>
+</resources>

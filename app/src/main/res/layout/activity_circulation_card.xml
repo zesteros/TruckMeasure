@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CirculationCardActivity">
+
+    <Space
+        android:id="@+id/space12"
+        android:layout_width="6dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <Space
+        android:id="@+id/space11"
+        android:layout_width="7dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space13"
+        android:layout_width="187dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/circulationCardEditText"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Ingrese la tarjeta"
+        android:inputType="textCapCharacters"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/nextButtonCirculationCard"
+        android:layout_width="179dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/primary"
+        android:drawableRight="@drawable/ic_next"
+        android:text="SIGUIENTE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/increaseEditText" />
+
+    <CheckBox
+        android:id="@+id/increaseCheckBox"
+        style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:checked="false"
+        android:text="LLEVA AUMENTO"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/increaseLabel" />
+
+    <Button
+        android:id="@+id/takeCirculationCardPhotoButton"
+        android:layout_width="51dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/primary"
+        android:drawableStart="@drawable/ic_take_photo"
+        android:drawableLeft="@drawable/ic_take_photo"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/circulationCardEditText"
+        app:layout_constraintTop_toBottomOf="@+id/space13" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TARJETA DE CIRCULACIÓN"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/takeCirculationCardPhotoButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/space13" />
+
+    <TextView
+        android:id="@+id/increaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="AUMENTO"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/circulationCardEditText" />
+
+    <EditText
+        android:id="@+id/increaseEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Aumento agregado (M)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/space11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space12"
+        app:layout_constraintTop_toBottomOf="@+id/increaseCheckBox" />
+</android.support.constraint.ConstraintLayout>

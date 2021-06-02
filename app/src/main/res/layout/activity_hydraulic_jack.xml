@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.HydraulicJackActivity">
+
+        <Space
+            android:id="@+id/space19"
+            android:layout_width="148dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/space24"
+            android:layout_width="15dp"
+            android:layout_height="312dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/space23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space19" />
+
+        <Space
+            android:id="@+id/space25"
+            android:layout_width="12dp"
+            android:layout_height="323dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/space23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space19"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <Space
+            android:id="@+id/space23"
+            android:layout_width="169dp"
+            android:layout_height="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextHydraulicJackButton" />
+
+        <TextView
+            android:id="@+id/subtitleHydraulicJack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Gato Hidráulico"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/space19" />
+
+        <EditText
+            android:id="@+id/lJackEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="INGRESA L"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/subtitleHydraulicJack" />
+
+        <EditText
+            android:id="@+id/aJackEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="INGRESA A"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/lJackEditText" />
+
+        <EditText
+            android:id="@+id/hJackEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="INGRESA H"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/aJackEditText" />
+
+        <EditText
+            android:id="@+id/remarksEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="Ingresa tus observaciones"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Observaciones"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/hJackEditText" />
+
+        <TextView
+            android:id="@+id/adjustmentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Ajuste"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/remarksEditText" />
+
+        <EditText
+            android:id="@+id/adjustmentEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="INGRESA AJUSTE"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/adjustmentButton"
+            app:layout_constraintTop_toBottomOf="@+id/adjustmentLabel" />
+
+        <Button
+            android:id="@+id/printButton"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/primary"
+
+            android:drawableRight="@drawable/ic_printer"
+            android:onClick="onPrintButtonClick"
+            android:text="IMPRIMIR BOLETO"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/readTagButton" />
+
+        <Button
+            android:id="@+id/adjustmentButton"
+            android:layout_width="47dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/green"
+            android:text="+"
+            android:onClick="adjustmentButtonOnClick"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/adjustmentLabel" />
+
+        <Button
+            android:id="@+id/addSignatureButton"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/primary"
+            android:drawableRight="@drawable/ic_signature"
+            android:onClick="onCaptureSignatureButtonClick"
+            android:text="AGREGAR FIRMA"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/adjustmentEditText" />
+
+        <Button
+            android:id="@+id/readTagButton"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="11dp"
+            android:backgroundTint="@color/primary"
+            android:drawableRight="@drawable/ic_read_tag"
+            android:onClick="onWriteTagButtonClick"
+            android:text="LEER TAG"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/printButton"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toEndOf="@+id/space24"
+            app:layout_constraintTop_toBottomOf="@+id/addSignatureButton"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/nextHydraulicJackButton"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/primary"
+            android:drawableRight="@drawable/ic_next"
+            android:onClick="onNextButtonClick"
+            android:text="SIGUIENTE"
+
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/space25"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="@+id/adjustmentLabel"
+            app:layout_constraintTop_toBottomOf="@+id/printButton" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

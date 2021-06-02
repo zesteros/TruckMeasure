@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Cubicaciones</string>
+    <string name="app_name_cubage">Cubicaciones VISE</string>
+    <string name="cubage_upper_case">CUBICACIONES</string>
+    <string name="extra_name_building">obra</string>
+    <string name="extra_name_superintendent">superintendente</string>
+    <string name="extra_name_user">usuario</string>
+    <string name="extra_name_building_description">descripcion_obra</string>
+    <string name="select_supplier">Seleccione proveedor</string>
+    <string name="welcome_title">Bienvenido</string>
+    <string name="introduce_a_syndicate">Ingresa un sindicato</string>
+    <string name="introduce_a_operator">Introduce un operador</string>
+    <string name="select_building">Selecciona una obra</string>
+    <string name="select_a_building">Selecciona una obra</string>
+    <string name="uri_authority">com.mx.vise.cubicaciones.fileprovider</string>
+    <string name="capture_licence_plate">Capturar placa %</string>
+    <string name="rear">trasera</string>
+    <string name="front">delantera</string>
+    <string name="write_licence_plate">Ingrese la placa %</string>
+    <string name="next_licence_plate">SIGUIENTE PLACA</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_settings">Ajustes</string>
+
+    <string name="torton">TORTON</string>
+
+    <string name="pipe">PIPA</string>
+
+    <string name="concrete">OLLA CONCRETO</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Sincronización</string>
+    <!--
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>-->
+
+
+    <string name="pref_title_sync_now">Sincronizar ahora</string>
+    <string name="sync_now_key">sync_now_key</string>
+    <string name="select_a_syndicate">Selecciona un sindicato</string>
+    <string name="take_photo">TOMAR FOTO</string>
+    <string name="licence_plate_has_more_char">La placa usualmente tiene más caracteres</string>
+    <string name="introduce_a_licence_plate">Ingrese la placa</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="select_a_brand">Selecciona una marca</string>
+    <string name="introduce_a_correct_licence_plate">Introduce una placa correctamente.</string>
+    <string name="take_a_photo_of_operator_licence">Toma una fotografía de la licencia del operador.</string>
+    <string name="select_a_color">Selecciona un color</string>
+    <string name="take_a_photo_of_card_circulation">Toma una foto de la tarjeta de circulación</string>
+    <string name="select_tractor_color">Seleccionar color del tracto</string>
+    <string name="select_box_color">Selecciona el color de la caja</string>
+    <string name="color_dialog_title">Color de %</string>
+    <string name="tractor">tracto</string>
+    <string name="box">caja</string>
+    <string name="pref_mac">pref_mac_key</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="printing">Imprimiendo...</string>
+    <string name="pref_header_printer">Establecer impresora</string>
+    <string name="pref_title_search_printer">Cambiar impresora</string>
+    <string name="selected_printer_key">selected_printer</string>
+    <string name="read_tag">LEER TAG</string>
+    <string name="write_tag">Escribir TAG</string>
+    <string name="tag_is_not_valid">Lo sentimos, el tag no es válido..</string>
+    <string name="error_happened_writing">Ocurrió un error al leer el tag.</string>
+    <string name="write_tag_timeout">Se ha agotado el tiempo de espera, inténtelo de nuevo.</string>
+    <string name="tag_validation">Validación de tag</string>
+    <string name="validating_tag">Validando Tag</string>
+    <string name="tag_with_id">Tag con TID: % validado correctamente</string>
+    <string name="information_is_correct">¿La información es correcta?</string>
+    <string name="operator_sign_does_not_captured">No se ha capturado la firma del operador.</string>
+    <string name="sign_captured">Firma Capturada</string>
+    <string name="set_volume">INGRESA VOLUMEN</string>
+    <string name="volume">Volúmen</string>
+    <string name="tag_successfully_writed">Tag escrito exitosamente.</string>
+    <string name="there_are_data_in_tag">Lo sentimos, ya hay datos en el tag.</string>
+    <string name="something_went_wrong_writing">Ocurrió un error al escribir en el tag.</string>
+    <string name="printer_name">printer_name</string>
+    <string name="printer_mac">printer_mac</string>
+    <string name="printer_established">Impresora establecida</string>
+    <string name="printer_established_actually">Impresora establecida actualmente: %</string>
+    <string name="printer_does_not_configured">Impresora no establecida, favor de establecerla en Ajustes.</string>
+    <string name="there_are_not_syndicates">No hay sindicatos</string>
+    <string name="please_sync_data_with_server">Por favor, sincroniza los datos con el servidor.</string>
+    <string name="finish">Finalizar</string>
+    <string name="capture_employee_sign">Capturar firma de usuario</string>
+    <string name="sign_here">Firme aquí</string>
+    <string name="sync_confirm">¿Estas seguro de sincronizar? Este proceso puede tardarse aproximadamente %  minutos</string>
+    <string name="go_ahead">Adelante</string>
+    <string name="sync_later">Sincronizar después</string>
+    <string name="pref_header_update">Actualización</string>
+    <string name="update_now_key">update_now_key</string>
+    <string name="pref_title_update_now">Actualización</string>
+    <string name="print_again">Reimprimir</string>
+    <string name="ticket_doesnt_printed">El boleto no se ha impreso.</string>
+    <string name="ticket_printed">BOLETO IMPRESO</string>
+
+
+    <string name="dialog_text">Ha ocurrido un error inesperado</string>
+    <string name="dialog_comment">Puedes enviar un comentario al desarrollador.</string>
+    <string name="acra_toast_text">Ha ocurrido un error en la aplicación cubicaciones.</string>
+    <string name="developer_email">aloza@vise.com.mx</string>
+    <string name="file_name">reporte_error.json</string>
+    <string name="subject_report_email">Reporte de error - Aplicación Cubicaciones VISE</string>
+    <string name="text_report_toast">Ha ocurrido un error, favor de enviar un correo al desarrollador con el reporte.</string>
+    <string name="cant_connect_to_printer">No se puede comunicar con la impresora.</string>
+    <string name="tag_doesnt_writed">El tag no se ha generado.</string>
+
+
+</resources>

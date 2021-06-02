@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">uhfhelper</string>
+    <string name="reading_tag">Leyendo tag</string>
+    <string name="please_wait">Espere por favor...</string>
+</resources>
